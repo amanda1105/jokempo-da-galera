@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+@charset 'utf-8';
+
+*{
+    font-size: 10px;
+    box-sizing: border-box;
+    font-family: Barlow Semi Condensed, sans-serif;
+    margin: 0;
+    padding: 0;
+    --Dark-Text: hsl(229, 25%, 31%);
+    --Score-Text: hsl(229, 64%, 46%);
+    --Header-Outline: hsl(217, 16%, 45%);
+
+    --Scissors-Gradient: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+    --Paper-Gradient: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+    --Rock-Gradient: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+    --Lizard-Gradient: linear-gradient(hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+    --Cyan: linear-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+
+}
+
+body{
+    background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* Header */
+
+.placar{
+    display: flex;
+    margin: 0 auto;
+    border: .5rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-top: 3rem;
+    padding: 5px 15px;
+    border: 3px solid var(--Header-Outline);
+    border-radius: 5px;
+}
+
+.placar img{
+   width: 30%;
+}
+
+.score__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: .5rem 2rem ;
+}
+
+.score--title{    
+    color: var(--Score-Text);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.score--value{
+    color: var(--Dark-Text);
+    font-size: 4rem;
+    font-weight: 700;
+}
+
