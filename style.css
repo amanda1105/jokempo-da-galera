@@ -66,3 +66,39 @@ body{
     font-weight: 700;
 }
 
+.game {
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.background-game img{
+    width: 70%;
+}
+.button-container{
+    display: flex;
+    margin-left: -100%;
+    margin-top: 0%;
+}
+.paper,
+.rock,
+.scissor{
+    border: 1px solid red;
+}
+
+.paper{
+    transform: translate(-100%, -50%);
+}
+.rock{
+    transform: translate(-100%, 50%);
+}
+.scissor{
+    transform: translate(-100%, -50%);
+}
+
+/* Footer */
