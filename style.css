@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
-
 @charset 'utf-8';
 
-*{
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+
+* {
     font-size: 10px;
     box-sizing: border-box;
     font-family: Barlow Semi Condensed, sans-serif;
@@ -64,10 +65,10 @@ body{
     color: var(--Dark-Text);
     font-size: 4rem;
     font-weight: 700;
+    margin-top: -.6rem;
 }
 
 .game {
-    background-color: blueviolet;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,30 +76,72 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding-top: 10rem;
+    
 }
 
-.background-game img{
-    width: 70%;
-}
-.button-container{
+.background-game{
     display: flex;
-    margin-left: -100%;
-    margin-top: 0%;
-}
-.paper,
-.rock,
-.scissor{
-    border: 1px solid red;
+    justify-content: center;    
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
 }
 
-.paper{
-    transform: translate(-100%, -50%);
+.background-game img {
+    max-width: 12rem;
 }
-.rock{
-    transform: translate(-100%, 50%);
+
+.icon-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
 }
-.scissor{
-    transform: translate(-100%, -50%);
+
+.icon-container img {
+    height: 20px;
+    width: 20px;
+}
+
+
+.paper {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 1rem;
+    border: solid .7rem hsl(230, 89%, 65%);
+    box-shadow:0 2px inset #ccc, 0 2px hsl(230, 89%, 62%);
+}
+
+.rock {
+    margin-top: 2.5rem;
+    grid-row: 3 / 3;
+    grid-column: 2 / 3;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 1rem;
+    border: solid .7rem hsl(349, 70%, 56%);
+    box-shadow:0 2px inset #ccc, 0 2px hsl(349, 71%, 52%);
+}
+
+.scissor {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 1rem;
+    border: solid .7rem hsl(40, 84%, 53%);
+    box-shadow:0 2px inset #ccc, 0 2px hsl(39, 89%, 49%);
+}
+
+.icon-container img:hover {
+    cursor: pointer;
 }
 
 /* Footer */
