@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="/assets/style/style.css">
 </head>
 <body>
   <header class="placar">
@@ -29,9 +28,15 @@
         <div class="rock"><img src="./images/icon-rock.svg" alt="rock"></div>
       </div>
   </main>
+  <div class="rules-modal">
+    <img src="design/original/mobile-rules-modal.jpg" alt="rules modal">
+  </div>
 
   <footer class="rules">
-    <button class="rules-button" onclick="">RULES</button>
+    <button class="rules-button" onclick="openRulesModal()">RULES</button>
   </footer>
+
+  <script src="assets/script/script.js" ></script>
+
 </body>
 </html>
