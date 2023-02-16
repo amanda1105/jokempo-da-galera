@@ -19,4 +19,4 @@ rulesButton.addEventListener("click", openRulesModal)
 
 rulesModal.addEventListener("click", function(event){
     closeRulesModal()
-})
+}) 
