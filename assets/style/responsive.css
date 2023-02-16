@@ -1,0 +1,57 @@
+@media (min-width: 768px) {
+
+
+
+    .placar {
+        width: 50%;
+        padding: 1.5rem;
+        border-radius: 1.2rem;
+    }
+
+    .placar img {
+        width: 20%;
+    }
+
+    .background-game img {
+        max-width: 22rem;
+    }
+
+    .icon-container {
+        margin: 2.5rem 0 0 0;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        
+    }
+
+    .upper-icons {
+        justify-content: space-between;
+        grid-row: 1 / span 2;
+        grid-column: 1/ span 7;
+    }
+
+    .paper, .scissor, .rock {
+        padding: 2.5rem;
+        border-width: 1rem;
+    }
+
+    .paper img, .scissor img, .rock img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .rock {
+        grid-row: 4 / span 4;
+        grid-column: 3/ span 3;
+    } 
+
+    .rules {
+        bottom: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 3rem;
+    }
+
+
+}

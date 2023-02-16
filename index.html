@@ -6,10 +6,11 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
   <link rel="stylesheet" href="/assets/style/style.css">
+  <link rel="stylesheet" href="/assets/style/responsive.css">
 </head>
 <body>
   <header class="placar">
-    <img src="./images/logo.svg" alt="logo">
+    <img class="logo" src="./images/logo.svg" alt="logo">
     <div class="score__container">
       <span class="score--title">Score</span>
       <span class="score--value">12</span>
@@ -29,7 +30,12 @@
       </div>
   </main>
   <div class="rules-modal">
-    <img src="design/original/mobile-rules-modal.jpg" alt="rules modal">
+    <picture>
+      <source media="(max-width: 767px)" srcset="/design/original/mobile-rules-modal.jpg">
+      <source class="modal-desktop" media="(min-width: 768px)" srcset="/design/original/desktop-rules-modal.jpg">
+      <img src="/design/original/mobile-rules-modal.jpg" alt="rules-modal">
+
+    </picture>
   </div>
 
   <footer class="rules">
